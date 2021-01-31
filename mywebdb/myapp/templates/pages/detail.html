@@ -1,0 +1,17 @@
+{% extends "pages/page01.html" %}
+<!--{{object}}-->
+
+
+{% block content %}
+<div class="container">
+<h1>Địa điểm: {{object.title}}</h1><br>
+<h2>Hình ảnh:</h2>
+<img src="{{object.image.url}} " width="50%"><br><br><br>
+<h3>Mô tả:</h3>
+    <p>{{object.body}}</p>
+<h4>Trạng thái</h4>
+<p>{{object.categories}}</p>
+</div>
+<a href="http://127.0.0.1:8000/" class="btn btn-primary">Trở về</a>
+
+{% endblock %}
